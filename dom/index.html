@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+        .red{
+            color:red
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+    <title>title</title>
+</head>
+<body>
+    <div id="test"></div>
+    <button id ="target">押sssssね</button>
+<script>
+    const target = document.getElementById('target')
+    target.addEventListener('click',(e)=> {
+        console.log(e);
+        const test = document.getElementById('test');
+        console.log(124)
+        test.textContent = ('テスト');
+        test.classList = ('blue')
+    } )
+
+</script>
+    
+</body>
+</html>
